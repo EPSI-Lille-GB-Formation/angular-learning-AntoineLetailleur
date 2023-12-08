@@ -9,12 +9,9 @@ import { TODOS } from './mock-todo';
   standalone: true,
   imports: [CommonModule, RouterOutlet],
   template: 
-   `<div class="container">
-      <h1> Liste de choses à faire</h1>
-        <ul *ngFor="let todos of todolist">
+        `<ul *ngFor="let todos of todolist">
           <li *ngIf="todos.isCompleted">{{todos.title}}</li>
-        </ul>
-    </div>`,
+        </ul>`,
   styles: []
 })
 
